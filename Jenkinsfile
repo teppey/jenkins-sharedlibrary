@@ -1,4 +1,4 @@
-// library 'lib'
+library 'lib'
 
 import jenkins.model.Jenkins
 
@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                echo "test-pipeline is buildable: ${Jenkins.instance.getItemByFullName('test-pipeline').isBuildable()}"
+                foo()
             }
         }
     }
