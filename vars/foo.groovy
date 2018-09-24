@@ -1,3 +1,3 @@
-def func() {
+def call() {
     echo 1
 }
