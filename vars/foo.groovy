@@ -1,3 +1,5 @@
+import jenkins.model.Jenkins
+
 def call() {
-    echo 1
+    echo(Jenkins.instance.getItemByFullName('test-pipeline').isBuildable())
 }
